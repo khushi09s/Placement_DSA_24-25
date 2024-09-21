@@ -1,11 +1,9 @@
-package Lec3;
-
-public class Pattern12 {
+public class Pattern_4 {
     public static void main(String[] args) {
-        int n =5;
+        int n = 5;
         int row = 1;
-        int space = n-1;
         int star = 1;
+        int space = 2*n - 1;
         while (row<=n) {
             //space
             int i = 1;
@@ -14,19 +12,15 @@ public class Pattern12 {
                 i++;
             }
             int j = 1;
+            //star
             while (j<=star) {
-                if (j%2==0) {
-                    System.out.print("!");
-                } else{
-                System.out.print(" * ");
-                }
+                System.out.print("* ");
                 j++;
             }
             System.out.println();
-            row++;
-            star += 2;
             space--;
-            
+            star++;
+            row++;
         }
     }
 }
